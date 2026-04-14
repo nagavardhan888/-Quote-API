@@ -1,3 +1,4 @@
+const mongoose = require('mongoose')
 const quoteSchema = new mongoose.Schema({
     text:{
         type:String,
@@ -9,3 +10,4 @@ const quoteSchema = new mongoose.Schema({
     }
 })
 const quote = mongoose.model('quote', quoteSchema)
+module.exports = quote

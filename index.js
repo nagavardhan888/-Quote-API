@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 app.use(express.json())
+const quotes = require('./models/schema')
 const mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost:27017/quoteDb')
 .then(() => console.log('Connected to MongoDB'))
